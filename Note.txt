@@ -7,3 +7,13 @@ https://regexr.com/
 https://caniuse.com/?search=has     << firefox is not supported.
 https://codepen.io/jh3y/pen/yLKMOBm
 -----------------------------------------------------------------------------
+
+- On launch, nothing, grey border.
+- Start typing, orange border.
+- Exist, if error, red border
+- Exist, if error, shake.
+- Start typing, if pass validation, green border.
+- Exist, if valid, keep green border.
+
+If there is placeholder:
+.form-group:has(:placeholder-shown)

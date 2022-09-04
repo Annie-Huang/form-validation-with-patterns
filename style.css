@@ -2,6 +2,7 @@
   --valid: lime;
   --focus: orange;
   --invalid: red;
+  --blur: #ccc;
 }
 
 form {
@@ -11,7 +12,7 @@ form {
 }
 
 input {
-  border: 5px solid var(--color, #ccc);
+  border: 5px solid var(--color, var(--blur));
   border-radius: 10px;
 }
 
@@ -32,7 +33,7 @@ input:focus {
 }
 */
 
-/* the order has to be :invalid -> :focus -> :valid, so when you are typing, i don't show you the error yet until you move out from the input. */
+/* the order has to be :invalid -> :focus -> :valid -> :placeholder-shown, so when you are typing, i don't show you the error yet until you move out from the input. */
 .form-group:has(:invalid) {
   --color: var(--invalid);
 }
@@ -44,6 +45,13 @@ input:focus {
 }
 .form-group:has(:valid) {
   --color: var(--valid);
+}
+
+.form-group:has(:placeholder-shown) {
+  --color: var(--blur);
+}
+.form-group:has(:placeholder-shown:not(:focus)) {
+  animation: none;
 }
 
 .input-hint {
