@@ -1,0 +1,7 @@
+Improve your form validation hints without JS! (https://www.youtube.com/watch?v=s2ThIxm7FyA&t=618s)
+
+https://codepen.io/kevinpowell/pen/MWVQQae
+https://github.com/Annie-Huang/form-validation-with-patterns
+
+https://regexr.com/
+-----------------------------------------------------------------------------
