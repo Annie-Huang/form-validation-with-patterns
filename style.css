@@ -15,6 +15,11 @@ input {
   border-radius: 10px;
 }
 
+/* Push the outline a bit more from border from default of chrome */
+input:focus {
+  outline-offset: 5px;
+}
+
 .form-group {
   display: grid;
   gap: 0.5rem;
