@@ -4,4 +4,5 @@ https://codepen.io/kevinpowell/pen/MWVQQae
 https://github.com/Annie-Huang/form-validation-with-patterns
 
 https://regexr.com/
+https://caniuse.com/?search=has     << firefox is not supported.
 -----------------------------------------------------------------------------
