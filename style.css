@@ -31,11 +31,16 @@ input:focus {
   border: 3px solid blue;
 }
 */
-.form-group:has(:valid) {
-  --color: var(--valid);
-}
+
+/* the order has to be :invalid -> :focus -> :valid, so when you are typing, i don't show you the error yet until you move out from the input. */
 .form-group:has(:invalid) {
   --color: var(--invalid);
+}
+.form-group:has(:focus) {
+  --color: var(--focus);
+}
+.form-group:has(:valid) {
+  --color: var(--valid);
 }
 
 .input-hint {
