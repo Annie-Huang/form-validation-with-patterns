@@ -54,6 +54,12 @@ input:focus {
   animation: none;
 }
 
+form:valid button {
+  cursor: pointer;
+  background-color: hsl(175 60% 40%);
+  color: white;
+}
+
 .input-hint {
   margin: 0;
   font-size: 1rem;
@@ -102,8 +108,9 @@ input::placeholder {
 }
 
 button {
-  cursor: pointer;
-  background-color: hsl(175 60% 40%);
+  cursor: not-allowed;
+  background-color: hsl(175 10% 30%);
+  color: hsl(175 10% 70%);
   border: 0;
   border-radius: 0.25rem;
 }

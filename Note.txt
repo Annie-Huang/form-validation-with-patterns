@@ -8,12 +8,16 @@ https://caniuse.com/?search=has     << firefox is not supported.
 https://codepen.io/jh3y/pen/yLKMOBm
 -----------------------------------------------------------------------------
 
-- On launch, nothing, grey border.
+- On launch, nothing, grey border, no shaking.
 - Start typing, orange border.
 - Exist, if error, red border
 - Exist, if error, shake.
 - Start typing, if pass validation, green border.
 - Exist, if valid, keep green border.
+- Exist, if valid, no shaking.
+
+- If form is invalid (which also apply when initially launched), grey button
+- If form is valid, green button
 
 If there is placeholder:
 .form-group:has(:placeholder-shown)
